@@ -1,0 +1,9 @@
+@import url(./normalize.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/container/container.css);
+@import url(../blocks/profile/profile.css);
+@import url(../blocks/profile-info/profile-info.css);
+@import url(../blocks/elements-grid/elements-grid.css);
+@import url(../blocks/grid-item/grid-item.css);
+@import url(../blocks/footer/footer.css);

@@ -1,0 +1,10 @@
+@import url(./__image/grid-item__image.css);
+@import url(./__text/grid-item__text.css);
+@import url(./__like/grid-item__like.css);
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}

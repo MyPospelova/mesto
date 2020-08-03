@@ -1,0 +1,12 @@
+@import url(./__title/profile-info__title.css);
+@import url(./__subtitle/profile-info__subtitle.css);
+.profile-info {
+  padding-left: 30px;
+  margin-top: 18px;
+}
+@media all and (max-width: 660px) {    
+  .profile-info {        
+    padding-left: 0;
+    margin-top: 10px;
+  }
+}

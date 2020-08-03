@@ -1,0 +1,19 @@
+.elements-grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, 361px);
+  grid-gap: 18px;
+  min-height: 744px;
+}
+@media all and (max-width: 1025px) {    
+  .elements-grid {        
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, 361px);
+  }
+}
+@media all and (max-width: 800px) {    
+  .elements-grid {        
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(6, 361px);
+  }
+}
