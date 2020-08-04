@@ -5,6 +5,7 @@
   line-height: 22px;
   color: #FFFFFF;
   margin: 0;
+  padding-left: 31px;
 }
 @media all and (max-width: 660px) {    
   .profile-info__subtitle {        

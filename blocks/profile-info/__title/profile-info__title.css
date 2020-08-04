@@ -5,7 +5,8 @@
   line-height: 56px;
   color: #FFFFFF;
   margin: 0;
-  padding-bottom: 16px;
+  padding-left: 31px;
+  padding-bottom: 10px;
 }
 @media all and (max-width: 800px) {    
   .profile-info__title {        
