@@ -8,6 +8,6 @@
 @media all and (max-width: 660px) {    
   .profile-info {        
     padding-left: 0;
-    margin-top: 10px;
+    flex-direction: column;
   }
 }

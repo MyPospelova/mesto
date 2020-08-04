@@ -3,3 +3,10 @@
   height: 50px;
   padding-top: 38px;
 }
+@media all and (max-width: 665px) {    
+  .profile__add-button {
+    width: 100%;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+}
