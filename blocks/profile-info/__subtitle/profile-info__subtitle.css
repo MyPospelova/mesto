@@ -11,10 +11,12 @@
   .profile-info__subtitle {        
     font-size: 14px;
     line-height: 17px;
-    text-align: center;
-    padding-left: 0px;
-    
   }
 }
-
+@media all and (max-width: 660px) {    
+  .profile-info__subtitle {        
+    text-align: center;
+    padding-left: 0px;
+  }
+}
 

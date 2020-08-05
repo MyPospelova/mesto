@@ -1,0 +1,15 @@
+.popup__dialog {
+  width: 430px;
+  height: 330px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding-left: 36px;
+  padding-right: 36px;
+  box-sizing: border-box;
+  position: relative;
+}
+@media all and (max-width: 665px) {    
+  .popup__dialog {
+    width: 100%;
+  }
+} 

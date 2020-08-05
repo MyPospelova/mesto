@@ -18,25 +18,28 @@
         <div class="profile-info">
           <img class="profile-info__avatar" src="./images/kusto.jpg" alt="Жак-Ив Кусто">
           <div>
-            <h1 class="profile-info__title">Жак-Ив Кусто <img class="profile__edit-button" src="images/Edit Button2.svg"
-                alt="Редактировать профиль"></h1>
-
+            <h1 class="profile-info__title">Жак-Ив Кусто
+              <button class="profile__edit-button" onclick="showPopup()">
+                <img class="" src="images/EditButton2.svg" alt="Редактировать профиль">
+              </button>
+            </h1>
             <p class="profile-info__subtitle">Исследователь океана</p>
           </div>
-
         </div>
         <div>
-          <img class="profile__add-button" src="images/Add Button.svg" alt="Добавить">
+          <button type="add" class="profile__add-button"><img class="profile__image" src="images/addbutton2.png"
+              alt="Добавить"></button>
         </div>
+
       </section>
       <section class="elements-grid">
         <div class="grid-item">
-          <img class="grid-item__image" src="images/scotland (1).jpg" alt="Шотландия">
+          <img class="grid-item__image" src="images/scotland.jpg" alt="Шотландия">
           <p class="grid-item__text">Шотландия</p>
           <img class="grid-item__like" src="images/Vector.svg" alt="Лайк">
         </div>
         <div class="grid-item">
-          <img class="grid-item__image" src="images/Gora Elbrus.png" alt="Гора Эльбрус">
+          <img class="grid-item__image" src="images/GoraElbrus.png" alt="Гора Эльбрус">
           <p class="grid-item__text">Гора Эльбрус</p>
           <img class="grid-item__like" src="images/Vector.svg" alt="Лайк">
         </div>
@@ -46,12 +49,12 @@
           <img class="grid-item__like" src="images/Vector.svg" alt="Лайк">
         </div>
         <div class="grid-item">
-          <img class="grid-item__image" src="images/fuerteventura_spain (1).jpg" alt="Гора Эльбрус">
+          <img class="grid-item__image" src="images/fuerteventura_spain.jpg" alt="Фуэртевентура">
           <p class="grid-item__text">Фуэртевентура</p>
           <img class="grid-item__like" src="images/Vector.svg" alt="Лайк">
         </div>
         <div class="grid-item">
-          <img class="grid-item__image" src="images/hiroshima (1).jpg" alt="Хиросима">
+          <img class="grid-item__image" src="images/hiroshima.jpg" alt="Хиросима">
           <p class="grid-item__text">Хиросима</p>
           <img class="grid-item__like" src="images/Vector.svg" alt="Лайк">
         </div>
@@ -65,8 +68,24 @@
     <footer class="footer">
       <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
     </footer>
-
+    <div class="popup">
+      <div class="popup__dialog">
+        <button type="closed" class="popup__closed"><img class="popup__image" src="images/Close Icon.png"
+            alt="закрыть попап"></button>
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <form class="popup__form">
+          <label class="popup__field">
+            <input type="text" name="username" class="popup__input">
+          </label>
+          <label class="popup__field">
+            <input type="text" name="profession" class="popup__input">
+          </label>
+        </form>
+        <button type="submit" class="popup__submit-button">Сохранить</button>
+      </div>
+    </div>
   </div>
+  <script src="script/script.js"></script>
 </body>
 
 </html>
