@@ -1,0 +1,10 @@
+.profile-info__avatar {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+@media all and (max-width: 660px) {    
+  .profile-info__avatar {        
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,22 @@
+.profile-info__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 56px;
+  color: #FFFFFF;
+  margin: 0;
+  padding-left: 31px;
+  padding-bottom: 10px;
+}
+@media all and (max-width: 800px) {    
+  .profile-info__title {        
+    font-size: 27px;
+    line-height: 56px;
+    padding-bottom: 0;
+  }
+}
+@media all and (max-width: 660px) {    
+  .profile-info__title {        
+    padding-left: 0; 
+  }
+}
