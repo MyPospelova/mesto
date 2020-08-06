@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./styles/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Место</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header container">
+      <img class="header__logo" src="./images/logo.svg" alt="Место">
+    </header>
+    <main class="container">
+      <section class="profile">
+        <div class="profile-info">
+          <img class="profile-info__avatar" src="./images/kusto.jpg" alt="Жак-Ив Кусто">
+          <div>
+            <div class="profile-info__edit">
+              <h1 class="profile-info__title">Жак-Ив Кусто</h1>
+              <button class="profile__edit-button" onclick="showPopup()">
+                <img class="" src="images/EditButton2.svg" alt="Редактировать профиль">
+              </button>
+            </div>
+            <p class="profile-info__subtitle">Исследователь океана</p>
+          </div>
+        </div>
+        <div>
+          <button type="add" class="profile__add-button"><img class="profile__image" src="images/addbutton2.png"
+              alt="Добавить"></button>
+        </div>
+
+      </section>
+      <section class="elements-grid">
+        <div class="grid-item">
+          <img class="grid-item__image" src="images/scotland.jpg" alt="Шотландия">
+          <p class="grid-item__text">Шотландия</p>
+          <img class="grid-item__like" src="images/Vector.svg" alt="Лайк">
+        </div>
+        <div class="grid-item">
+          <img class="grid-item__image" src="images/GoraElbrus.png" alt="Гора Эльбрус">
+          <p class="grid-item__text">Гора Эльбрус</p>
+          <img class="grid-item__like" src="images/Vector.svg" alt="Лайк">
+        </div>
+        <div class="grid-item">
+          <img class="grid-item__image" src="images/Dombay.png" alt="Домбай">
+          <p class="grid-item__text">Домбай</p>
+          <img class="grid-item__like" src="images/Vector.svg" alt="Лайк">
+        </div>
+        <div class="grid-item">
+          <img class="grid-item__image" src="images/fuerteventura_spain.jpg" alt="Фуэртевентура">
+          <p class="grid-item__text">Фуэртевентура</p>
+          <img class="grid-item__like" src="images/Vector.svg" alt="Лайк">
+        </div>
+        <div class="grid-item">
+          <img class="grid-item__image" src="images/hiroshima.jpg" alt="Хиросима">
+          <p class="grid-item__text">Хиросима</p>
+          <img class="grid-item__like" src="images/Vector.svg" alt="Лайк">
+        </div>
+        <div class="grid-item">
+          <img class="grid-item__image" src="images/Karachaevsk.png" alt="Карачаевск">
+          <p class="grid-item__text">Карачаево-Черкессия</p>
+          <img class="grid-item__like" src="images/Vector.svg" alt="Лайк">
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
+    </footer>
+    <div class="popup">
+      <div class="popup__dialog">
+        <button type="closed" class="popup__closed" onclick="hidePopup()">
+          <img class="popup__image" src="images/Close Icon.png" alt="закрыть попап">
+        </button>
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <form class="popup__form" onsubmit="saveData(event)" action="#">
+          <label class="popup__field">
+            <input type="text" name="username" class="popup__input">
+          </label>
+          <label class="popup__field">
+            <input type="text" name="profession" class="popup__input">
+          </label>
+          <button type="submit" class="popup__submit-button">Сохранить</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+  <script src="script/script.js"></script>
+</body>
+
+</html>
