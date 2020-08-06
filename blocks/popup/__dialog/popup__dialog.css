@@ -8,8 +8,10 @@
   box-sizing: border-box;
   position: relative;
 }
-@media all and (max-width: 665px) {    
+@media all and (max-width: 630px) {    
   .popup__dialog {
     width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 } 

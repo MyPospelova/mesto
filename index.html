@@ -18,11 +18,12 @@
         <div class="profile-info">
           <img class="profile-info__avatar" src="./images/kusto.jpg" alt="Жак-Ив Кусто">
           <div>
-            <h1 class="profile-info__title">Жак-Ив Кусто
+            <div class="profile-info__edit">
+              <h1 class="profile-info__title">Жак-Ив Кусто</h1>
               <button class="profile__edit-button" onclick="showPopup()">
                 <img class="" src="images/EditButton2.svg" alt="Редактировать профиль">
               </button>
-            </h1>
+            </div>
             <p class="profile-info__subtitle">Исследователь океана</p>
           </div>
         </div>
@@ -70,18 +71,20 @@
     </footer>
     <div class="popup">
       <div class="popup__dialog">
-        <button type="closed" class="popup__closed"><img class="popup__image" src="images/Close Icon.png"
-            alt="закрыть попап"></button>
+        <button type="closed" class="popup__closed" onclick="hidePopup()">
+          <img class="popup__image" src="images/Close Icon.png" alt="закрыть попап">
+        </button>
         <h2 class="popup__title">Редактировать профиль</h2>
-        <form class="popup__form">
+        <form class="popup__form" onsubmit="saveData(event)" action="#">
           <label class="popup__field">
             <input type="text" name="username" class="popup__input">
           </label>
           <label class="popup__field">
             <input type="text" name="profession" class="popup__input">
           </label>
+          <button type="submit" class="popup__submit-button">Сохранить</button>
         </form>
-        <button type="submit" class="popup__submit-button">Сохранить</button>
+
       </div>
     </div>
   </div>

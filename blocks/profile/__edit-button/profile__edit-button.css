@@ -4,9 +4,13 @@
   cursor: pointer;
   background: none;
   border: none;
+  margin-top: 20px;
+  opacity: 1;
 }
 .profile__edit-button:hover {
-  opacity: 0.5;
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+
 }
 @media all and (max-width: 665px) {    
   .profile__edit-button {
