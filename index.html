@@ -14,13 +14,13 @@
       <img class="header__logo" src="./images/logo.svg" alt="Место">
     </header>
     <main class="container">
-      <section class="profile">
+      <section class="two-columns">
         <div class="profile-info">
           <img class="profile-info__avatar" src="./images/kusto.jpg" alt="Жак-Ив Кусто">
           <div>
             <div class="profile-info__edit">
               <h1 class="profile-info__title">Жак-Ив Кусто</h1>
-              <button class="profile__edit-button" onclick="showPopup()">
+              <button type="button" class="profile-info__edit-button">
                 <img class="" src="images/EditButton2.svg" alt="Редактировать профиль">
               </button>
             </div>
@@ -28,41 +28,52 @@
           </div>
         </div>
         <div>
-          <button type="add" class="profile__add-button"><img class="profile__image" src="images/addbutton2.png"
+          <button type="button" class="two-columns__add-button"><img src="images/addbutton2.png"
               alt="Добавить"></button>
         </div>
-
       </section>
       <section class="elements-grid">
         <div class="grid-item">
           <img class="grid-item__image" src="images/scotland.jpg" alt="Шотландия">
-          <p class="grid-item__text">Шотландия</p>
-          <img class="grid-item__like" src="images/Vector.svg" alt="Лайк">
+          <div class="grid-item__place">
+            <h2 class="grid-item__text">Шотландия</h2>
+            <button type="button" class="grid-item__like"><img src="images/Vector.svg" alt="Лайк"></button>
+          </div>
         </div>
         <div class="grid-item">
           <img class="grid-item__image" src="images/GoraElbrus.png" alt="Гора Эльбрус">
-          <p class="grid-item__text">Гора Эльбрус</p>
-          <img class="grid-item__like" src="images/Vector.svg" alt="Лайк">
+          <div class="grid-item__place">
+            <h2 class="grid-item__text">Гора Эльбрус</h2>
+            <button type="button" class="grid-item__like"><img src="images/Vector.svg" alt="Лайк"></button>
+          </div>
         </div>
         <div class="grid-item">
           <img class="grid-item__image" src="images/Dombay.png" alt="Домбай">
-          <p class="grid-item__text">Домбай</p>
-          <img class="grid-item__like" src="images/Vector.svg" alt="Лайк">
+          <div class="grid-item__place">
+            <h2 class="grid-item__text">Домбай</h2>
+            <button type="button" class="grid-item__like"><img src="images/Vector.svg" alt="Лайк"></button>
+          </div>
         </div>
         <div class="grid-item">
           <img class="grid-item__image" src="images/fuerteventura_spain.jpg" alt="Фуэртевентура">
-          <p class="grid-item__text">Фуэртевентура</p>
-          <img class="grid-item__like" src="images/Vector.svg" alt="Лайк">
+          <div class="grid-item__place">
+            <h2 class="grid-item__text">Фуэртевентура</h2>
+            <button type="button" class="grid-item__like"><img src="images/Vector.svg" alt="Лайк"></button>
+          </div>
         </div>
         <div class="grid-item">
           <img class="grid-item__image" src="images/hiroshima.jpg" alt="Хиросима">
-          <p class="grid-item__text">Хиросима</p>
-          <img class="grid-item__like" src="images/Vector.svg" alt="Лайк">
+          <div class="grid-item__place">
+            <h2 class="grid-item__text">Хиросима</h2>
+            <button type="button" class="grid-item__like"><img src="images/Vector.svg" alt="Лайк"></button>
+          </div>
         </div>
         <div class="grid-item">
           <img class="grid-item__image" src="images/Karachaevsk.png" alt="Карачаевск">
-          <p class="grid-item__text">Карачаево-Черкессия</p>
-          <img class="grid-item__like" src="images/Vector.svg" alt="Лайк">
+          <div class="grid-item__place">
+            <h2 class="grid-item__text">Карачаево-Черкессия</h2>
+            <button type="button" class="grid-item__like"><img src="images/Vector.svg" alt="Лайк"></button>
+          </div>
         </div>
       </section>
     </main>
@@ -71,11 +82,11 @@
     </footer>
     <div class="popup">
       <div class="popup__dialog">
-        <button type="closed" class="popup__closed" onclick="hidePopup()">
-          <img class="popup__image" src="images/Close Icon.png" alt="закрыть попап">
+        <button type="reset" class="popup__closed">
+          <img class="popup__image" src="images/CloseIcon.png" alt="закрыть попап">
         </button>
         <h2 class="popup__title">Редактировать профиль</h2>
-        <form class="popup__form" onsubmit="saveData(event)" action="#">
+        <form class="popup__form" name="popup-form" action="#">
           <label class="popup__field">
             <input type="text" name="username" class="popup__input">
           </label>
