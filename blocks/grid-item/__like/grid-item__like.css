@@ -1,7 +1,18 @@
 .grid-item__like {
-  position: absolute;
-  bottom: 31px ;
-  right: 22px;
   width: 21px;
   height: 18px;
+  background: transparent;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 31px;
+  margin-right: 21px;
+}
+.grid-item__like:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+.grid-item__like:active, .grid-item__like:focus {
+  outline: none;
 }
