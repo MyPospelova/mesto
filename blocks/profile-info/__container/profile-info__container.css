@@ -1,0 +1,9 @@
+.profile-info__container {
+  display: flex;
+  align-items: center;
+}
+@media all and (max-width: 660px) {    
+  .profile-info__container {        
+    flex-direction: column;
+  }
+}
