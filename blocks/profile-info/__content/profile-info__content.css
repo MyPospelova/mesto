@@ -1,0 +1,9 @@
+.profile-info__content {
+  padding-left: 31px;
+}
+@media all and (max-width: 660px) {    
+  .profile-info__content {        
+    text-align: center;
+    padding-left: 0px;
+  }
+}
