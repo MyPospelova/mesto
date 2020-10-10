@@ -30,60 +30,18 @@
         <button type="button" class="profile-info__add-button"><img src="images/addbutton2.png" alt="Добавить"></button>
       </section>
       <section class="elements-grid">
-        <div class="grid-item">
-          <img class="grid-item__image" src="images/scotland.jpg" alt="Шотландия">
-          <div class="grid-item__place">
-            <h2 class="grid-item__text">Шотландия</h2>
-            <button type="button" class="grid-item__like"><img src="images/Vector.svg" alt="Лайк"></button>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img class="grid-item__image" src="images/GoraElbrus.png" alt="Гора Эльбрус">
-          <div class="grid-item__place">
-            <h2 class="grid-item__text">Гора Эльбрус</h2>
-            <button type="button" class="grid-item__like"><img src="images/Vector.svg" alt="Лайк"></button>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img class="grid-item__image" src="images/Dombay.png" alt="Домбай">
-          <div class="grid-item__place">
-            <h2 class="grid-item__text">Домбай</h2>
-            <button type="button" class="grid-item__like"><img src="images/Vector.svg" alt="Лайк"></button>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img class="grid-item__image" src="images/fuerteventura_spain.jpg" alt="Фуэртевентура">
-          <div class="grid-item__place">
-            <h2 class="grid-item__text">Фуэртевентура</h2>
-            <button type="button" class="grid-item__like"><img src="images/Vector.svg" alt="Лайк"></button>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img class="grid-item__image" src="images/hiroshima.jpg" alt="Хиросима">
-          <div class="grid-item__place">
-            <h2 class="grid-item__text">Хиросима</h2>
-            <button type="button" class="grid-item__like"><img src="images/Vector.svg" alt="Лайк"></button>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img class="grid-item__image" src="images/Karachaevsk.png" alt="Карачаевск">
-          <div class="grid-item__place">
-            <h2 class="grid-item__text">Карачаево-Черкессия</h2>
-            <button type="button" class="grid-item__like"><img src="images/Vector.svg" alt="Лайк"></button>
-          </div>
-        </div>
       </section>
     </main>
     <footer class="footer">
       <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
     </footer>
-    <div class="popup">
+    <div class="popup js-popupuser">
       <div class="popup__dialog">
         <button type="reset" class="popup__closed">
           <img class="popup__image" src="images/CloseIcon.png" alt="закрыть попап">
         </button>
         <h2 class="popup__title">Редактировать профиль</h2>
-        <form class="popup__form" name="popup-form" action="#">
+        <form class="popup__form" name="popup-user-form" action="#">
           <label class="popup__field">
             <input type="text" name="username" class="popup__input">
           </label>
@@ -93,6 +51,45 @@
           <button type="submit" class="popup__submit-button">Сохранить</button>
         </form>
 
+      </div>
+    </div>
+    <div class="popup js-popupplace">
+      <div class="popup__dialog">
+        <button type="reset" class="popup__closed">
+          <img src="images/CloseIcon.png" alt="закрыть попап">
+        </button>
+        <h2 class="popup__title">Новое место</h2>
+        <form class="popup__form" name="popup-place-form" action="#">
+          <label class="popup__field">
+            <input type="text" name="placename" class="popup__input" placeholder="Название">
+          </label>
+          <label class="popup__field">
+            <input type="text" name="placelink" class="popup__input" placeholder="Ссылка на изображение">
+          </label>
+          <button type="submit" class="popup__submit-button">Создать</button>
+        </form>
+
+      </div>
+    </div>
+
+    <template id="cardtemplate">
+      <div class="grid-item">
+        <img class="grid-item__image">
+        <div class="grid-item__place">
+          <h2 class="grid-item__text"></h2>
+          <button type="button" class="grid-item__like">
+          </button>
+        </div>
+        <button type="button" class="grid-item__trash"><img src="images/Trash.svg" alt="мусор"></button>
+      </div>
+    </template>
+    <div class="popup popup__picture">
+      <div class="popup__dialog popup__dialog_large">
+        <img class="popup__image" src="" id="popupImageId" alt="Гора Эльбрус">
+        <button type="reset" class="popup__closed">
+          <img class="popup__image" src="images/CloseIcon.png" alt="закрыть попап">
+        </button>
+        <div class="popup__text">Эльбрус</div>
       </div>
     </div>
   </div>

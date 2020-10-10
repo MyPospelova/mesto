@@ -1,0 +1,9 @@
+.popup__dialog_large {
+  max-width: 75vw;
+  max-height: 75vh;
+  padding: 0;
+  background: none;
+  color: white;
+  font-size: 12px;
+  line-height: 15px;
+}
