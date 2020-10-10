@@ -5,10 +5,13 @@
 @import url(./__field/popup__field.css);
 @import url(./__input/popup__input.css);
 @import url(./__button/popup__submit-button.css);
+@import url(./__dialog/_large/popup__dialog_large.css);
+@import url(./__text/popup__text.css);
+@import url(./__image/popup__image.css);
 
 
 .popup {
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.7);
   position: fixed;
   left:0;
   right: 0;

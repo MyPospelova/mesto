@@ -1,0 +1,15 @@
+.grid-item__trash {
+  position: absolute;
+  background: transparent;
+  border: none;
+  top: 18px;
+  right: 15px;
+  cursor: pointer;
+}
+.grid-item__trash:hover {
+  opacity: 0.6;
+  transition: opacity 0.2s ease-in-out;
+}
+.grid-item__trash:active, .grid-item__trash:focus {
+  outline: none;
+}

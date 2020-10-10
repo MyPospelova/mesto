@@ -2,10 +2,13 @@
 @import url(./__place/grid-item__place.css);
 @import url(./__text/grid-item__text.css);
 @import url(./__like/grid-item__like.css);
+@import url(./__like/_active/grid-item__like_active.css);
+@import url(./__trash/grid-item__trash.css);
 .grid-item {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   background-color: white;
   overflow: hidden;
+  position: relative;
 }
